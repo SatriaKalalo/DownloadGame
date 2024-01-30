@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #2f3238;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 140px;
+}
+
+.nav-links{
+    padding: 20px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;position: relative;
+}
+
+.nav-links li a::after{
+    content: "";
+    background: #ff3d00;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    background: #ff3d00;
+    color :#fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.content{
+    margin: 15px -104px;
+}
+
+.row{
+    width: 223vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image{
+    background: #ff3d00;
+    position: relative;
+    flex: 1;
+    max-width: 414px;
+    height: 360px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.image img{
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.gambar-container {
+    text-align: center;
+    margin: 20px; /* Atur jarak antara gambar dan teks */
+  }
+  
+  img {
+    width: 340px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto;/* Contoh: tambahkan border untuk memisahkan gambar */
+    border-radius: 5px; /* Contoh: tambahkan border-radius untuk sudut melengkung */
+  }
+  
+  .teks-tulisan {
+    margin-top: 5px; /* Atur jarak antara gambar dan teks */
+    color: #333; /* Atur warna teks sesuai kebutuhan */
+    cursor: pointer; /* Mengubah kursor saat diarahkan ke tautan */
+  }
+  
+  .teks-tulisan:hover {
+    text-decoration: underline; /* Memberi garis bawah pada teks saat dihover */
+  }
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+} 

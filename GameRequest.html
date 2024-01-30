@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GameRequest.css">
+</head>
+    <body>
+        <div class="header">
+
+            <video autoplay loop class="back-video" muted plays-inline>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
+            <nav>
+                <img src="media/logo.png" class="logo">
+                <ul class="nav-links">
+                    <li><a href="Buatanlagi.html">Home</a></li>
+                    <li><a href="GamePlayed1.html">Rating</a></li>
+                    <li><a href="GameReview.html">Reviews</a></li>
+                    <li><a href="GameRequest.html">Request</a></li>
+                    <li class="button" id="btn">sign-up</li>
+                </ul>
+            </nav>
+
+            <div class="container">
+                <h2>What game is right for you?</h2>
+                <form onsubmit="emailSend(); reset(); return false;">
+                    <input type="text" id="name" placeholder="Name" name="name" required>
+                    <input type="text" id="phone" placeholder="GameRequest" name="phone" required>
+                    <input type="email" id="Gmail" placeholder="Email" name="Email" required>
+                    <button type="submit" class="btn">submit</button>
+                </form>
+            </div> 
+        </div>
+	        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="GameRequest.js"></script>
+    </body>
+</html>
